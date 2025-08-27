@@ -1,0 +1,11 @@
+<botcomponent schemaname="Default_Agent7.gpt.default">
+  <componenttype>15</componenttype>
+  <description>Agent which create automatically orders based in a chat with the user</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Order Record Assistant</name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

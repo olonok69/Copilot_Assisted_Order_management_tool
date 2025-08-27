@@ -1,0 +1,38 @@
+kind: TaskDialog
+inputs:
+  - kind: ManualTaskInput
+    propertyName: organization
+    value: current
+
+  - kind: ManualTaskInput
+    propertyName: entityName
+    value: cr039_orders
+
+modelDisplayName: "Retrieve specific order from organization orders table  "
+modelDescription: |
+  This capability retrieves a specific order from the 'cr039_orders' table in the current organization.
+  For cr039_deliverystatus map values to logical names using this mapping: 
+   0: Pending
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr039_commondataserviceforapps_6271ac0cce
+  connectionProperties:
+    mode: Maker
+
+  operationId: GetItemWithOrganization

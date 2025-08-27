@@ -1,0 +1,17 @@
+<botcomponent_connectionreferenceset>
+  <botcomponent_connectionreference botcomponentid.schemaname="Default_Agent7.component.CreateRecordWithOrganization_commondatas_2_tZNZ5oBxruUhVjvTpVATl" connectionreferenceid.connectionreferencelogicalname="cr039_commondataserviceforapps_6271ac0cce">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+  <botcomponent_connectionreference botcomponentid.schemaname="Default_Agent7.component.DeleteRecordWithOrganization_commondatas_4_sCS3hxT78t7aPl0xedprn" connectionreferenceid.connectionreferencelogicalname="cr039_commondataserviceforapps_6271ac0cce">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+  <botcomponent_connectionreference botcomponentid.schemaname="Default_Agent7.component.GetItemWithOrganization_commondataservic_0_gwklDUxYTZKlnMGXgpOBZ" connectionreferenceid.connectionreferencelogicalname="cr039_commondataserviceforapps_6271ac0cce">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+  <botcomponent_connectionreference botcomponentid.schemaname="Default_Agent7.component.ListRecordsWithOrganization_commondatase_1_qiW97N0jHMRKucGiUIFLw" connectionreferenceid.connectionreferencelogicalname="cr039_commondataserviceforapps_6271ac0cce">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+  <botcomponent_connectionreference botcomponentid.schemaname="Default_Agent7.component.UpdateRecordWithOrganization_commondatas_3_20steRvk8C3OdpeFRgO51" connectionreferenceid.connectionreferencelogicalname="cr039_commondataserviceforapps_6271ac0cce">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_connectionreference>
+</botcomponent_connectionreferenceset>

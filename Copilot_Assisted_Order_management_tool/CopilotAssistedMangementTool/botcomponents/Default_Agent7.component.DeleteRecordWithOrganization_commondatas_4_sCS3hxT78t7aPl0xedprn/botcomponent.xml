@@ -1,0 +1,30 @@
+<botcomponent schemaname="Default_Agent7.component.DeleteRecordWithOrganization_commondatas_4_sCS3hxT78t7aPl0xedprn">
+  <componenttype>9</componenttype>
+  <description>This capability deletes a specific order from the 'cr039_orders' table by its unique order ID (GUID).
+For cr039_deliverystatus map values to logical names using this mapping: 
+ 0: Pending
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Delete specific order from organization orders table</name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</botcomponent>

@@ -1,0 +1,5 @@
+<botcomponent_workflowset>
+  <botcomponent_workflow botcomponentid.schemaname="Default_Agent7.action.Addneworder" workflowid.workflowid="1ed5a9cd-8f82-f011-b4cb-6045bd2bf9c6">
+    <iscustomizable>1</iscustomizable>
+  </botcomponent_workflow>
+</botcomponent_workflowset>

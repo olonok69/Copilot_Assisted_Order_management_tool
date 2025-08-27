@@ -1,0 +1,32 @@
+kind: AdaptiveDialog
+modelDescription: Create a new order . The user ask to create a new order and the agent ask for the Product Name, Quantity Delivery Status and Order Number
+beginDialog:
+  kind: OnRecognizedIntent
+  id: main
+  intent: {}
+  actions:
+    - kind: BeginDialog
+      id: 41aK28
+      input: {}
+      dialog: Default_Agent7.action.Addneworder
+      output:
+        binding:
+          status_add_row: Topic.status_add_row
+
+    - kind: ConditionGroup
+      id: conditionGroup_QwEMAc
+      conditions:
+        - id: conditionItem_gUlms5
+          condition: =Topic.status_add_row = "ok"
+          actions:
+            - kind: SendActivity
+              id: sendActivity_9zWdGs
+              activity: Your order has been created suscessfully
+
+      elseActions:
+        - kind: SendActivity
+          id: sendActivity_suaAA1
+          activity: There was a problem creating your order
+
+inputType: {}
+outputType: {}

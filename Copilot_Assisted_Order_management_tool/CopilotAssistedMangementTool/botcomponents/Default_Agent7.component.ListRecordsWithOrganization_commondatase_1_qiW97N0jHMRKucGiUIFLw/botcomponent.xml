@@ -1,0 +1,30 @@
+<botcomponent schemaname="Default_Agent7.component.ListRecordsWithOrganization_commondatase_1_qiW97N0jHMRKucGiUIFLw">
+  <componenttype>9</componenttype>
+  <description>This capability lists order records from the cr039_orders table, allowing OData filter expressions.
+For cr039_deliverystatus map values to logical names using this mapping: 
+ 0: Pending
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+</description>
+  <iscustomizable>0</iscustomizable>
+  <name>List order records with OData filtering options  </name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</botcomponent>

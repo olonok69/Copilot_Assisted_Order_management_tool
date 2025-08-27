@@ -1,0 +1,30 @@
+<botcomponent schemaname="Default_Agent7.component.UpdateRecordWithOrganization_commondatas_3_20steRvk8C3OdpeFRgO51">
+  <componenttype>9</componenttype>
+  <description>This capability updates an existing order in the 'cr039_orders' table using a specified record's GUID and new order details. It prompts for the order to update and the fields to change, such as delivery status, expected delivery date, product name, and quantity.
+For cr039_deliverystatus map values to logical names using this mapping: 
+ 0: Pending
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+
+For statecode map values to logical names using this mapping: 
+ 0: Active
+ 1: Inactive
+
+For statuscode map values to logical names using this mapping: 
+ 1: Active
+ 2: Inactive
+</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Update existing order details in organization orders table  </name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>1</statecode>
+  <statuscode>2</statuscode>
+</botcomponent>

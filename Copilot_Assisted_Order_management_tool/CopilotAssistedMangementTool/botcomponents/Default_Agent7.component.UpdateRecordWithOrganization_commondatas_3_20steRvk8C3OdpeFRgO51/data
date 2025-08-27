@@ -1,0 +1,48 @@
+kind: TaskDialog
+inputs:
+  - kind: ManualTaskInput
+    propertyName: organization
+    value: current
+
+  - kind: ManualTaskInput
+    propertyName: entityName
+    value: cr039_orders
+
+  - kind: AutomaticTaskInput
+    propertyName: recordId
+    description: <A row's globally unique identifier (GUID) sourced from a record in the same entity>
+    shouldPromptUser: true
+
+  - kind: AutomaticTaskInput
+    propertyName: item
+    description: "<A JSON Object with the format { columnName1: Value1, columnName2: Value2, ...}. Use table schema {\"cr039_deliverystatus\":\"cr039_deliverystatus\",\"cr039_deliverystatusname\":\"cr039_deliverystatusname\",\"cr039_expecteddeliverydate\":\"cr039_expecteddeliverydate\",\"cr039_orderdate\":\"cr039_orderdate\",\"cr039_orderid\":\"cr039_orderid\",\"cr039_ordernumber\":\"cr039_ordernumber\",\"cr039_productname\":\"cr039_productname\",\"cr039_quantity\":\"cr039_quantity\",\"createdby\":\"createdby\",\"createdbyname\":\"createdbyname\",\"createdbyyominame\":\"createdbyyominame\",\"createdon\":\"createdon\",\"createdonbehalfby\":\"createdonbehalfby\",\"createdonbehalfbyname\":\"createdonbehalfbyname\",\"createdonbehalfbyyominame\":\"createdonbehalfbyyominame\",\"importsequencenumber\":\"importsequencenumber\",\"modifiedby\":\"modifiedby\",\"modifiedbyname\":\"modifiedbyname\",\"modifiedbyyominame\":\"modifiedbyyominame\",\"modifiedon\":\"modifiedon\",\"modifiedonbehalfby\":\"modifiedonbehalfby\",\"modifiedonbehalfbyname\":\"modifiedonbehalfbyname\",\"modifiedonbehalfbyyominame\":\"modifiedonbehalfbyyominame\",\"overriddencreatedon\":\"overriddencreatedon\",\"ownerid\":\"ownerid\",\"owneridname\":\"owneridname\",\"owneridtype\":\"owneridtype\",\"owneridyominame\":\"owneridyominame\",\"owningbusinessunit\":\"owningbusinessunit\",\"owningbusinessunitname\":\"owningbusinessunitname\",\"owningteam\":\"owningteam\",\"owninguser\":\"owninguser\",\"statecode\":\"statecode\",\"statecodename\":\"statecodename\",\"statuscode\":\"statuscode\",\"statuscodename\":\"statuscodename\",\"timezoneruleversionnumber\":\"timezoneruleversionnumber\",\"utcconversiontimezonecode\":\"utcconversiontimezonecode\",\"versionnumber\":\"versionnumber\"}>"
+    shouldPromptUser: true
+
+modelDisplayName: "Update existing order details in organization orders table  "
+modelDescription: |
+  This capability updates an existing order in the 'cr039_orders' table using a specified record's GUID and new order details. It prompts for the order to update and the fields to change, such as delivery status, expected delivery date, product name, and quantity.
+  For cr039_deliverystatus map values to logical names using this mapping: 
+   0: Pending
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr039_commondataserviceforapps_6271ac0cce
+  connectionProperties:
+    mode: Maker
+
+  operationId: UpdateRecordWithOrganization

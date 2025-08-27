@@ -1,0 +1,9 @@
+kind: TaskDialog
+outputs:
+  - propertyName: status_add_row
+
+action:
+  kind: InvokeFlowTaskAction
+  flowId: 1ed5a9cd-8f82-f011-b4cb-6045bd2bf9c6
+
+outputMode: All

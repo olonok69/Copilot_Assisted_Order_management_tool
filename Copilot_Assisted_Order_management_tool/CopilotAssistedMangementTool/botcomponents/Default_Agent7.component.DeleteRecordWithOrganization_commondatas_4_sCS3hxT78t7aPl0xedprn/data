@@ -1,0 +1,43 @@
+kind: TaskDialog
+inputs:
+  - kind: ManualTaskInput
+    propertyName: organization
+    value: current
+
+  - kind: ManualTaskInput
+    propertyName: entityName
+    value: cr039_orders
+
+  - kind: AutomaticTaskInput
+    propertyName: recordId
+    description: <A row's globally unique identifier (GUID) sourced from a record in the same entity>
+    shouldPromptUser: true
+
+modelDisplayName: Delete specific order from organization orders table
+modelDescription: |
+  This capability deletes a specific order from the 'cr039_orders' table by its unique order ID (GUID).
+  For cr039_deliverystatus map values to logical names using this mapping: 
+   0: Pending
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+
+  For statecode map values to logical names using this mapping: 
+   0: Active
+   1: Inactive
+
+  For statuscode map values to logical names using this mapping: 
+   1: Active
+   2: Inactive
+action:
+  kind: InvokeConnectorTaskAction
+  connectionReference: cr039_commondataserviceforapps_6271ac0cce
+  connectionProperties:
+    mode: Maker
+
+  operationId: DeleteRecordWithOrganization

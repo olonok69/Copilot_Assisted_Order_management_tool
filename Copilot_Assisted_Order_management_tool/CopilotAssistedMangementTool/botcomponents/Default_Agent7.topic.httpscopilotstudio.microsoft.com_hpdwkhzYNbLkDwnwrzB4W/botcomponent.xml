@@ -1,0 +1,11 @@
+<botcomponent schemaname="Default_Agent7.topic.httpscopilotstudio.microsoft.com_hpdwkhzYNbLkDwnwrzB4W">
+  <componenttype>16</componenttype>
+  <description>This knowledge source searches information on the web found in https://copilotstudio.microsoft.com website</description>
+  <iscustomizable>0</iscustomizable>
+  <name>https://copilotstudio.microsoft.com</name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

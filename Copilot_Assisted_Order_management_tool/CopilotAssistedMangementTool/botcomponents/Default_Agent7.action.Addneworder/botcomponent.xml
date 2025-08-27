@@ -1,0 +1,10 @@
+<botcomponent schemaname="Default_Agent7.action.Addneworder">
+  <componenttype>9</componenttype>
+  <iscustomizable>0</iscustomizable>
+  <name>Add new order</name>
+  <parentbotid>
+    <schemaname>Default_Agent7</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>
