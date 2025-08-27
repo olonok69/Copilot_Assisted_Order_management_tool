@@ -330,14 +330,7 @@ curl -X POST [bot-endpoint]/api/messages
 
 This project is licensed under the MIT License. See LICENSE file for details.
 
-## Support
 
-### Technical Support
-
-- Create issues in the project repository
-- Consult Power Platform documentation
-- Engage with Microsoft Copilot community forums
-- Contact enterprise support for production issues
 
 ### Documentation
 
